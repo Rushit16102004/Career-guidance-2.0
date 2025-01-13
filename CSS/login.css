@@ -1,0 +1,236 @@
+body{
+  background:url("../Images/blur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px; /* Base font size for responsiveness */
+}
+
+/* Responsive adjustments for body background */
+@media (max-width: 600px) {
+  body {
+    background-size: 100% 100%; /* Adjust background size for smaller screens */
+  }
+}
+
+.container {
+  padding: 4.2rem 0; /* Combined padding-top and padding-bottom */
+  max-width: 90%; /* Adjust max-width for responsiveness */
+  margin: auto; /* Center container horizontally */
+}
+
+a{
+  text-decoration:none !important;
+}
+
+h1,h2,h3{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem; /* Adjust font size for responsiveness */
+}
+
+.myform{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  margin: auto; /* Center form horizontally */
+}
+
+.tx-tfm{
+  text-transform:uppercase;
+}
+
+.mybtn {
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth effect */
+}
+
+.mybtn:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.google {
+  color: #666;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgrey;
+  transition: background-color 0.3s ease; /* Added transition for background color */
+}
+
+.google:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+form .error {
+  color: #ff0000;
+}
+
+#second{display:none;}
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-weight: 600;
+  font-size: 2rem; /* Adjust font size for responsiveness */
+}
+
+.nav-item {
+  font: 400 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Combined font properties */
+  font-size: 1rem; /* Adjust font size for responsiveness */
+}
+
+#navi {
+  background-color: #223141;
+  margin-bottom: 1%;
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: whitesmoke;
+}
+
+#course1 {
+  display: none;
+}
+#course2 {
+  display: none;
+}
+#course3 {
+  display: none;
+}
+#course4 {
+  display: none;
+}
+#course5 {
+  display: none;
+}
+#course6 {
+  display: none;
+}
+.btn:hover {
+  color: #d35400;
+}
+.fluid p {
+  color: black;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+  margin-top: 10px;
+}
+.header h2 {
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #223141;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 800;
+  transition: color 0.3s ease; /* Added transition for color change */
+  font-size: 2rem; /* Adjust font size for responsiveness */
+}
+
+.header h2:hover {
+  color: #d35400; /* Change color on hover */
+}
+.h {
+  color: #d35400;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5rem; /* Adjust font size for responsiveness */
+}
+.mycourse {
+  background-color: #112d42;
+  margin: 20px 40px; /* Combined margin properties */
+  max-width: 90%; /* Adjust max-width for responsiveness */
+  margin: auto; /* Center horizontally */
+}
+
+#text,
+#links {
+  color: #d35400;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+}
+.navbar {
+  background-color: #223141;
+}
+#text {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+}
+.brand {
+  color: #0a6fe9;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+}
+#active {
+  color: #d35400;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+}
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem; /* Adjust font size for responsiveness */
+}
+#links {
+  color: white;
+  font-size: 1.2rem; /* Adjust font size for responsiveness */
+}
+#links:hover {
+  background-color: #d35400;
+}
+
+.expandable {
+  cursor: pointer;
+  transition: max-height 0.3s ease; /* Smooth transition for height */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.expandable-content {
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.3s ease; /* Smooth transition for height */
+}
+
+/* Expanded state */
+.expandable.active .expandable-content {
+  max-height: 200px; /* Adjust based on content size */
+}

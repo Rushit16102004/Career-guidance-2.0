@@ -1,3 +1,23 @@
+// Function to handle carousel auto-slide
+let carouselIndex = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+
+function showNextCarouselItem() {
+    carouselItems[carouselIndex].classList.remove('active');
+    carouselIndex = (carouselIndex + 1) % carouselItems.length;
+    carouselItems[carouselIndex].classList.add('active');
+}
+// Automatically change carousel every 5 seconds
+setInterval(showNextCarouselItem, 2000);
+
+// Function to toggle expandable section
+document.getElementById('expandableSection').addEventListener('click', function() {
+    const content = this.querySelector('.expandable-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+});
+
+
+
 // This code is for toggling the display of course details
 $(document).ready(function(){
     $("h3#one").click(function(q){

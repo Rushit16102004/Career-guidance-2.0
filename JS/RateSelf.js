@@ -1,14 +1,26 @@
 // Example function to retrieve and use skill values from localStorage
 function useSkillValues() {
-    const skills = ['jsSkill', 'pythonSkill', 'javaSkill', 'cppSkill', 'htmlCssSkill', 'rubySkill', 'swiftSkill', 'phpSkill', 'goSkill', 'rustSkill', 'typescriptSkill', 'kotlinSkill', 'scalaSkill', 'haskellSkill', 'Experience'];
+    const skills = ['pythonSkill', 
+        'javaSkill', 
+        'cppSkill', 
+        'csharpSkill', 
+        'rSkill', 
+        'phpSkill', 
+        'webDevSkill', 
+        'nodeSkill', 
+        'mlSkill', 
+        'dataSkill', 
+        'sqlSkill', 
+        'nosqlSkill', 
+        'gameDevSkill', 
+        'cryptoSkill', 
+        'scapySkill',
+        'multiSkill'];
     const skillValues = {};
 
     skills.forEach(skill => {
         skillValues[skill] = localStorage.getItem(skill); // Retrieve skill value
     });
-
-    // Example usage: Display the skill values in the console
-    console.log(skillValues); // Output the skill values for verification
 }
 
                                               // for software

@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <h1>Personalized Profile</h1>
-        <button class="btn" id="softwareSkill" onclick="toggleQuiz('quizForm_software')">software</button>
-        <button class="btn" id="hardwareSkill" onclick="toggleQuiz('quizForm_hardware')">Hardware</button>
+        <button class="btn" id="softwareSkill" onclick="toggleQuiz('quizForm_software')">Technical Field</button>       <!--software as a Technical Field-->
+        <button class="btn" id="hardwareSkill" onclick="toggleQuiz('quizForm_hardware')">Non-Technical Field</button>   <!--hardware as a Non-Technical Field-->
 
 <!-- software form -->
 <form id="quizForm_software">
@@ -200,7 +200,7 @@
 
 <!-- hardwate form -->
         <form id="quizForm_hardware" style="display: none;">
-            <div class="question">
+            <!-- <div class="question">
                 <label>10000. How would you rate your JavaScript skills?</label>
                 <select name="jsSkill1">
                     <option value="0">Select</option>
@@ -364,7 +364,7 @@
                     <option value="75">12 to 24</option>
                     <option value="100">above 24</option>
                 </select>
-            </div>
+            </div> -->
             <button type="button" onclick="calculateScoreHardware()">Submit</button>
             <div id="result_hardware"></div>
             <div id="goH"></div>

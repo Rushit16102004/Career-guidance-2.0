@@ -71,7 +71,7 @@ function calculateScoreSoftware() {
         if (!startOverButton) {
             startOverButton = document.createElement('button'); // Create the button element
             startOverButton.id = 'startOverButtonSoftware'; // Set a unique ID for the button
-            startOverButton.innerText = 'Start Over'; // Set button text
+            startOverButton.innerText = 'Explore more'; // Set button text
             startOverButton.onclick = () => {
                 const currentFormS = document.querySelector('form[style="display: block;"]'); // Get the currently visible form
                 if (currentFormS) {
@@ -79,7 +79,7 @@ function calculateScoreSoftware() {
                 }
                 document.getElementById('result_software').innerText = "";
                 startOverButton.remove();
-                window.location.href = 'interest.html';
+                window.location.href = 'interest.html';startOver
             };
             // Append the button to a specific container instead of the body
             const goSContainer = document.getElementById('goS');
@@ -121,7 +121,7 @@ function calculateScoreSoftware() {
         if (!startOverButton) {
             startOverButton = document.createElement('button'); // Create the button element
             startOverButton.id = 'startOverButtonHardware'; // Set a unique ID for the button
-            startOverButton.innerText = 'Start Over'; // Set button text
+            startOverButton.innerText = 'Explore more'; // Set button text
             startOverButton.onclick = () => {
                 const currentFormH = document.querySelector('form[style="display: block;"]'); // Get the currently visible form
                 if (currentFormH) {

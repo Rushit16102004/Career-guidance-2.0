@@ -282,19 +282,19 @@ body {
   color: #d35400;
 }
 #contact {
+  background: url(pexels-photo-2383010.jpeg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #112d42;
-  margin-top: 20px;
-}
-#contact::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
+  background: #112D42;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 20px;
+  }
 }
 #contain {
   position: relative;
@@ -302,6 +302,12 @@ body {
   min-height: 550px;
   display: flex;
   z-index: 1000;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-width: 100%;
+    min-height: auto;
+  }
 }
 #contain #contactinfo {
   position: absolute;
@@ -309,13 +315,20 @@ body {
   width: 350px;
   height: calc(100% - 80px);
   z-index: 1;
-  background: #112d42;
+  background: #112D42;
   padding: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
 #contain #contactinfo h1 {
   color: #fff;
@@ -324,12 +337,24 @@ body {
   left: 30px;
   top: 20px;
   font-weight: 500;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 20px;
+    left: 0;
+    top: 0;
+  }
 }
 #contain #contactinfo ul.info {
   position: relative;
   bottom: 60px;
   left: 30px;
   margin: 10px 0;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    bottom: 0;
+    left: 0;
+    margin: 20px 0;
+  }
 }
 #contain #contactinfo ul.info li {
   position: relative;
@@ -338,6 +363,10 @@ body {
   margin: 20px 0;
   cursor: pointer;
   align-items: flex-start;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
 }
 #contain #contactinfo ul.info li span:nth-child(1) {
   width: 30px;
@@ -352,20 +381,30 @@ body {
   margin-left: 10px;
   font-weight: 300;
 }
-#contain #contactinfo ul.social-media {
+#contain #contactinfo ul.social-media
+{
   position: relative;
   left: 20px;
   bottom: 40px;
   display: flex;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    left: 0;
+    bottom: 0;
+    margin: 20px 0;
+  }
 }
-#contain #contactinfo ul.social-media li {
+#contain #contactinfo ul.social-media li
+{
   list-style: none;
   margin-right: 15px;
 }
-#contain #contactinfo ul.social-media li a {
+#contain #contactinfo ul.social-media li a
+{
   text-decoration: none;
 }
-#contain #contactinfo ul.social-media li a img {
+#contain #contactinfo ul.social-media li a img
+{
   filter: invert(1);
 }
 #contain .contactform {
@@ -377,31 +416,65 @@ body {
   height: 100%;
   background: #fff;
   box-shadow: 0, 50px 50px rgba(0, 0, 0, 0.25);
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    position: relative;
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
 }
-#contain .contactform h2 {
-  color: #0f3959;
+#contain .contactform h2
+{
+  color: #0F3959;
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
-#contain .contactform .formbox {
+#contain .contactform .formbox
+{
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 30px;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 10px;
+  }
 }
-#contain .contactform .formbox .inputbox {
+#contain .contactform .formbox .inputbox
+{
   position: relative;
   margin-bottom: 35px;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
-#contain .contactform .formbox .inputbox.w50 {
+#contain .contactform .formbox .inputbox.w50
+{
   width: 47%;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
-#contain .contactform .formbox .inputbox.w100 {
+#contain .contactform .formbox .inputbox.w100
+{
   width: 100%;
 }
 #contain .contactform .formbox .inputbox input,
-#contain .contactform .formbox .inputbox textarea {
+#contain .contactform .formbox .inputbox textarea
+{
   width: 100%;
   resize: none;
   padding: 5px 0;
@@ -411,11 +484,13 @@ body {
   border: none;
   outline: none;
   border-bottom: 1px solid #777;
+  transition: border-color 0.3s;
 }
-#contain .contactform .formbox .inputbox textarea {
+
+#contain .contactform .formbox .inputbox textarea{
   height: 120px;
 }
-#contain .contactform .formbox .inputbox span {
+#contain .contactform .formbox .inputbox span{
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -427,25 +502,53 @@ body {
 #contain .contactform .formbox .inputbox input:focus ~ span,
 #contain .contactform .formbox .inputbox input:valid ~ span,
 #contain .contactform .formbox .inputbox textarea:focus ~ span,
-#contain .contactform .formbox .inputbox textarea:valid ~ span {
+#contain .contactform .formbox .inputbox textarea:valid ~ span
+{
   transform: translate(-20px);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #095a55;
+  color: #095A55;
   font-weight: 500;
 }
-#contain .contactform .formbox .inputbox input[type="submit"] {
-  position: relative;
-  cursor: pointer;
-  background: #095a55;
-  color: #fff;
-  border: none;
-  max-width: 150px;
-  padding: 12px;
+#contain .contactform .formbox .inputbox input[type="submit"]
+{
+position: relative;
+cursor: pointer;
+background: #095A55;
+color: #fff;
+border: none;
+max-width: 150px;
+padding: 12px;
 }
-#contain .contactform .formbox .inputbox input[type="submit"]:hover {
-  background: #0d948d;
+#contain .contactform .formbox .inputbox input[type="submit"]:hover
+{
+  background: #0D948D;
+}
+
+.inputbox input:focus + span,
+.inputbox textarea:focus + span,
+.inputbox input:not(:placeholder-shown) + span,
+.inputbox textarea:not(:placeholder-shown) + span {
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+/* Add this to your CSS file */
+#successMessage {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 15px;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Start with opacity 0 for fade effect */
+  transition: opacity 0.5s ease; /* Smooth transition for fade effect */
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .average-display {

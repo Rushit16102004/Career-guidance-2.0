@@ -14,7 +14,7 @@
     <title>signUp</title>
 </head>
 <body>
-    <form>
+    <form action="signUpbackend.php" method="POST">
         <div class="form-group">
             <label for="exampleInputEmail1">First Name</label>
             <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
@@ -40,7 +40,7 @@
         </div>
         <div class="col-md-12 ">
             <div class="form-group">
-            <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+            <p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
             </div>
         </div>
         </div>

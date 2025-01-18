@@ -25,7 +25,7 @@
                 <h1>Login</h1>
               </div>
             </div>
-            <form>
+            <form action="loginbackend.php" method="POST">
               <div class="form-group login">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -47,7 +47,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+                <p class="text-center">Don't have account? <a href="signUp.php" id="signup">Sign up here</a></p>
               </div>
             </form>        
           </div>

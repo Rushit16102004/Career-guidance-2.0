@@ -52,7 +52,7 @@
             </form>        
           </div>
         </div>
-        <div id="second">
+        <!-- <div id="second">
           <div class="myform form ">
             <div class="logo mb-3">
               <div class="col-md-12 text-center">
@@ -90,7 +90,7 @@
               </div>
             </div>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

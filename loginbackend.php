@@ -14,7 +14,7 @@ print_r($data);
 
 if($data){
     echo '<script>alert("Login Successfully");</script>';
-    echo '<script>window.location.href="interest.php"</script>';
+    echo '<script>window.location.href="RateSelf.php"</script>';
 }else{
     echo '<script>alert("Account does not exist");</script>';
     echo '<script>window.location.href="login.php"</script>';

@@ -35,6 +35,7 @@
             <label for="exampleInputEmail1">Confirm Password</label>
             <input type="password" name="cpassword" id="Cpassword"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
         </div>
+        <input type="submit" value="Submit">
         <div class="col-md-12 text-center mb-3">
             <a href="/login.php"></a>
         </div>
@@ -43,7 +44,6 @@
             <p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
             </div>
         </div>
-        <input type="submit" value="Submit">
         </div>
     </form>
 <script src="JS/login.js"></script>

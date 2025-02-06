@@ -44,7 +44,6 @@
             <p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
             </div>
         </div>
-        </div>
     </form>
 <script src="JS/login.js"></script>
 </body>

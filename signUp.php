@@ -35,6 +35,7 @@
             <label for="exampleInputEmail1">Confirm Password</label>
             <input type="password" name="cpassword" id="Cpassword"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
         </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
         <div class="col-md-12 text-center mb-3">
             <a href="/login.php"></a>
         </div>

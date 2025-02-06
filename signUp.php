@@ -43,6 +43,7 @@
             <p class="text-center"><a href="login.php" id="signin">Already have an account?</a></p>
             </div>
         </div>
+        <input type="submit" value="Submit">
         </div>
     </form>
 <script src="JS/login.js"></script>

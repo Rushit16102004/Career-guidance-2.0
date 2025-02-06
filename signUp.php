@@ -33,7 +33,7 @@
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Confirm Password</label>
-            <input type="password" name="password" id="Cpassword"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+            <input type="password" name="cpassword" id="Cpassword"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
         </div>
         <div class="col-md-12 text-center mb-3">
             <a href="/login.php"></a>
